@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>😸 Miawlist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div>
+        <h1>😸 Miawlist</h1>
+        <p>Miaw Miaw Miaw</p>
+      </div>
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-toggle">🌙 Dark Mode</button>
+        <div class="clock-card">
+          <span class="clock-label">Waktu Sekarang</span>
+          <div id="clock" class="clock">00:00:00</div>
+          <div id="dateNow" class="date-now"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="panel form-panel">
+      <h2>Tambah Tugas</h2>
+      <div class="form-grid">
+        <input id="taskInput" type="text" placeholder="Tulis tugas baru..." />
+        <input id="taskDate" type="date" />
+        <input id="taskTime" type="time" />
+        <select id="taskStatus">
+          <option value="todo">To Do</option>
+          <option value="doing">Doing</option>
+          <option value="done">Done</option>
+        </select>
+        <button id="addBtn">Tambah</button>
+      </div>
+    </section>
+
+    <section class="panel calendar-panel">
+      <div class="panel-header">
+        <h2>Calendar</h2>
+        <div class="calendar-nav">
+          <button id="prevMonth">‹</button>
+          <span id="monthYear"></span>
+          <button id="nextMonth">›</button>
+        </div>
+      </div>
+      <div id="calendar" class="calendar"></div>
+    </section>
+
+    <section class="kanban">
+      <div class="kanban-column">
+        <h2>To Do</h2>
+        <div id="todoList" class="task-list"></div>
+      </div>
+      <div class="kanban-column">
+        <h2>Doing</h2>
+        <div id="doingList" class="task-list"></div>
+      </div>
+      <div class="kanban-column">
+        <h2>Done</h2>
+        <div id="doneList" class="task-list"></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
